@@ -1,0 +1,193 @@
+.usr-brief{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usr-brief .us-n, .usr-brief .tod{
+  margin: 0;
+}
+
+.usr-brief .us-n{
+  font-size: 18px;
+  color: #B8393B;
+  font-family: "Poppins-SemiBold";
+}
+
+.usr-brief .ntt img{
+  width: 37px;
+  border-radius: 100%;
+}
+
+.atm-act{
+  background-color: #B8393B;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.atm-act .cr-initi{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.atm-act .cr-initi span{
+  color: #fff;
+}
+
+.atm-act .cr-initi .bn img{
+  width: 50px;
+}
+
+.cn-cont{
+  display: flex;
+  justify-content: center;
+}
+
+.atm-act .cn{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.valid{
+  font-size: 9px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.valid-date{
+  font-size: 10px;
+  color: #fff;
+}
+
+.ownership{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.ownership .cred{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ownership img{
+  width: 70px;
+}
+
+.insight{
+  display: flex;
+  align-items: center;
+  background-color: #B8393B;
+  border-radius: 8px;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.insight .current{
+  width: 50%;
+  border-right: 1px solid #fff;
+  margin-right: 20px;
+  color: #FFF;
+}
+
+.insight .current div{
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.insight .current div span{
+ font-size: 12px;
+ font-family: "Poppins-SemiBold";
+}
+
+.insight .current div p{
+ margin: 0;
+ font-size: 11px;
+}
+
+.insight .amount{
+  color: #FFF;
+}
+
+.insight .amount span{
+  font-size: 16px;
+  font-family: "Poppins-Medium";
+}
+
+.insight .amount p{
+  font-size: 10px;
+  margin: 0;
+}
+
+.q-action{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  color: #4E4E4E;
+}
+
+.q-action .action{
+  text-align: center;
+}
+
+.q-action .action .point{
+  border-radius: 100%;
+  background-color: #b8393b1c;
+  text-align: center;
+  justify-content: center;
+  width: 55px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.q-action .action svg{
+  vertical-align: middle;
+}
+
+.transaction-over .heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.transaction-over .heading h3{
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+}
+
+.transaction-over .summary .item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EAEAEA;
+  margin-top: 5px;
+}
+
+.transaction-over .summary .item .vcx .c-over{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.transaction-over .summary .item .vcx .c-over p{
+  margin: 0;
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+}
+
+.transaction-over .summary .item .vcx .c-over span{
+  font-size: 11px;
+}
+
+.transaction-over .summary .item p.amount{
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+}

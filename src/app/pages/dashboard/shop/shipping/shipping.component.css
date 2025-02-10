@@ -1,0 +1,42 @@
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Poppins-SemiBold";
+  color: #B8393B;
+}
+
+.payment-card{
+  text-align: center;
+}
+
+form{
+  margin: 0;
+}
+
+.form-actions{
+  margin-top: 20px;
+}
+
+.credit-card h2{
+  font-family: "Poppins-SemiBold";
+  font-size: 18px;
+}
+
+.pay-success{
+  padding: 30px 10px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: transparent;
+  text-align: center;
+}
+
+.pay-success .form-actions{
+  margin-top: 50px;
+}
+
+.pay-success .form-actions p{
+  font-family: "Poppins-Bold";
+  font-size: 18px;
+}

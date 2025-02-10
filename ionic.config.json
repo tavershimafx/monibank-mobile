@@ -1,0 +1,7 @@
+{
+  "name": "MoniBank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

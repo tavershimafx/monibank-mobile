@@ -1,0 +1,76 @@
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Poppins-SemiBold";
+  color: #B8393B;
+}
+
+.product-details img{
+  width: 100%;
+}
+
+.product-details form, .product-details form .form-actions{
+  margin: 0;
+}
+
+.multi-row{
+  display: flex;
+  gap: 10px;
+}
+
+.product-details .product-title{
+  font-family: "Poppins-SemiBold";
+  color: #B8393B;
+  font-size: 18px;
+  margin: 0;
+}
+
+.section-title{
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+/* from catalog page. can be shared*/
+.pr-catalog{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pr-catalog .product{
+  width: 48%;
+  margin-bottom: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.pr-catalog .product .pr-img img{
+  width: 100%;
+}
+
+.pr-catalog .product .pr-details{
+  padding: 0 5px 5px 5px;
+}
+
+.pr-catalog .product .pr-details a{
+  font-family: "Poppins-SemiBold";
+  color: #B8393B;
+  font-size: 14px;
+}
+
+.pr-catalog .product .pr-details .pricing{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pr-catalog .product .pr-details .pricing .price{
+  font-family: "Poppins-SemiBold";
+}
+
+.pr-catalog .product .pr-details .pricing .discount{
+  color: #E01315;
+}

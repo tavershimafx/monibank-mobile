@@ -1,0 +1,77 @@
+h2{
+  font-size: 18px;
+  font-family: "Poppins-Medium";
+  margin-bottom: 5px;
+}
+
+.vg-kg .emb{
+  position: relative;
+  height: 250px;
+}
+
+.vg-kg .emb img{
+  height: 50px;
+  transform: translateY(200%);
+}
+
+.form-actions h2{
+  text-align: center;
+}
+
+
+.pay-success{
+  padding: 30px 10px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: transparent;
+  text-align: center;
+}
+
+.pay-success .form-actions{
+  margin-top: 50px;
+}
+
+.pay-success .form-actions p{
+  font-family: "Poppins-Bold";
+  font-size: 18px;
+}
+
+.arc {
+  --b: 3px; /* the boder thickness */
+  --a: 240deg; /* control the progression */
+  position: absolute;
+  width: 250px;
+  aspect-ratio: 1;
+  padding: var(--b);
+  border-radius: 50%;
+  background: #B8393B;
+  --_g:/var(--b) var(--b) no-repeat  radial-gradient(50% 50%,#000 97%,#0000);
+    mask: top var(--_g), calc(50% + 50%*sin(var(--a))) calc(50% - 50%*cos(var(--a))) var(--_g),
+    linear-gradient(#0000 0 0) content-box intersect,conic-gradient(#000 var(--a),#0000 0);
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(540deg);
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(540deg) ;
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}

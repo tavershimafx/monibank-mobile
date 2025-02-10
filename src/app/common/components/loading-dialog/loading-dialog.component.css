@@ -1,0 +1,59 @@
+modal-dialog .ctent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emb{
+  /* position: relative; */
+  background: none;
+}
+
+.ctent img{
+  background: none;
+  width: 100px;
+}
+
+.arc {
+  top: 35%;
+  left: 15%;
+  z-index: 100;
+  --b: 3px; /* the boder thickness */
+  --a: 240deg; /* control the progression */
+  position: absolute;
+  width: 250px;
+  aspect-ratio: 1;
+  padding: var(--b);
+  border-radius: 50%;
+  background: #B8393B;
+  --_g:/var(--b) var(--b) no-repeat  radial-gradient(50% 50%,#000 97%,#0000);
+    mask: top var(--_g), calc(50% + 50%*sin(var(--a))) calc(50% - 50%*cos(var(--a))) var(--_g),
+    linear-gradient(#0000 0 0) content-box intersect,conic-gradient(#000 var(--a),#0000 0);
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(540deg);
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(540deg) ;
+  }
+  to {
+    transform: rotateZ(1080deg);
+  }
+}

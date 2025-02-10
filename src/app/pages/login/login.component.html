@@ -1,0 +1,30 @@
+<div class="g-layout">
+    <back-nav></back-nav>
+    <h1>Login to Equity Bank</h1>
+    <p class="intr">Login to Light is your pathway to a seamless digital experience.</p>
+    <form [formGroup]="loginForm" (submit)="login()">
+        <p class="danger" *ngIf="loginErrors">{{loginErrors}}</p>
+        <label for="Email">Email</label>
+        <div class="input-group">
+            <span><i class="fa-regular fa-envelope"></i></span>
+            <input type="email" placeholder="abc@email.com" formControlName="username">
+        </div>
+        
+        <label for="Password">Password</label>
+        <div class="input-group">
+            <span><i class="fa fa-lock"></i></span>
+            <input type="password" placeholder="****************" formControlName="password">
+        </div>
+            
+        <div class="pl-x">
+            <a routerLink="#">Forgot password</a>
+            <a routerLink="#">Privacy policy</a>
+        </div>
+
+        <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Login</button>
+            <button class="btn btn-outline">Connect to a wallet</button>
+        </div>
+    </form>
+</div>
+<loading-dialog *ngIf="isLoading"></loading-dialog>

@@ -1,0 +1,35 @@
+.vg-kg span i{
+  font-size: 120px;
+  color: #B8393B;
+}
+
+.rules{
+  margin-top: 30px;
+}
+
+.rules .item{
+  display: flex;
+  align-items: center;
+  color:#6E6E6E;
+  margin-bottom: 20px;
+}
+
+.rules .item span{
+  background-color: #B8393B;
+  color: #FFF;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.rules .item:nth-of-type(1) span{
+  padding: 5px 12px;
+}
+
+.rules .item:not(:nth-of-type(1)) span{
+  padding: 5px 10px;
+}
+
+.vg-kg img{
+  width: 150px;
+}

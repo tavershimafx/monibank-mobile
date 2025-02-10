@@ -1,0 +1,35 @@
+<back-nav><div class="title">Checkout</div></back-nav>
+<div class="checkout-items">
+    <div class="item" *ngFor="let product of checkout.products">
+        <img [src]="product.thumbnail" alt="product">
+        <div class="product">
+            <p class="product-title">{{product.name}}</p>
+            <span>₦{{product.total}}</span>
+        </div>
+    </div>
+</div>
+<form action="">
+    <div class="form-actions">
+        <input type="text" placeholder="Enter coupon code">
+        
+        <div class="total-section">
+            <div class="section-item">
+                <p>Items</p>
+                <p>₦{{ checkout.total | number}}</p>
+            </div>
+            <div class="section-item">
+                <p>Discoount</p>
+                <p>₦0.00</p>
+            </div>
+            <div class="section-item">
+                <p>Shipping</p>
+                <p>₦0.00</p>
+            </div>
+            <div class="section-item total">
+                <p>Total Price</p>
+                <p>₦{{ checkout.total | number}}</p>
+            </div>
+        </div>
+        <a class="btn btn-primary" routerLink="/dashboard/shipping">Shipping</a>
+    </div>
+</form>

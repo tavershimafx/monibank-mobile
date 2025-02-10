@@ -1,0 +1,21 @@
+.splash-screen{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.image-34{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-34 img{
+  width: 200px;
+}
+
+.text-label{
+  text-align: center;
+}

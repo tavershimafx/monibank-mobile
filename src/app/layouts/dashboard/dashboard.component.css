@@ -1,0 +1,36 @@
+
+
+.c-nav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EAEAEA;
+    background-color: #FFF;
+}
+
+.c-nav .nav-item{
+    position: relative;
+    text-align: center;
+}
+
+.c-nav .nav-item:nth-child(3) span{
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: -23px;
+}
+
+.c-nav .nav-item p{
+    position: relative;
+    margin: 0;
+    color: #A5A5A5;
+}
+
+.c-nav .nav-item:nth-child(3) p{
+    bottom: -15px;
+}

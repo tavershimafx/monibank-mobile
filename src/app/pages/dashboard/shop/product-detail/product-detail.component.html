@@ -1,0 +1,31 @@
+<back-nav><div class="title">Product Detail</div></back-nav>
+<div class="product-details">
+    <img [src]="product.thumbnail" alt="product">
+    <p class="product-title">{{product.name}}</p>
+    <p>{{product.shortDescription}}</p>
+    <form action="">
+        <div class="form-actions">
+            <div class="multi-row">
+                <button class="btn btn-outline" (click)="checkout()">Checkout</button>
+                <button class="btn btn-primary" (click)="addToCart(product.id)">Add To Cart</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<h2 class="section-title">More to love</h2>
+<div class="pr-catalog">
+    <div *ngFor="let product of products" class="product" routerLink="/dashboard/product-detail" [queryParams]="{ id: product.id }">
+        <div class="pr-img">
+            <img [src]="product.thumbnail" alt="product">
+        </div>
+        <div class="pr-details">
+            <a class="pr-name" routerLink="/dashboard/product-detail" [queryParams]="{ id: product.id }">{{product.name}}</a>
+            <div class="pricing">
+                <span class="price">₦{{product.price}}</span>
+                <span class="discount">-{{product.discount}}%</span>
+            </div>
+        </div>
+    </div>
+</div>
+<loading-dialog *ngIf="isLoading"></loading-dialog>

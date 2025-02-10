@@ -1,0 +1,270 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('./assets/all.min.css');
+
+@font-face {
+    font-family: "Poppins";
+    src: url('./assets/font/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url('./assets/font/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url('./assets/font/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url('./assets/font/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url('./assets/font/DMSans-VariableFont.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+    color: #B8393B;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.g-layout{
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.d-layout{
+    position: relative;
+    padding: 20px 20px 90px 20px;
+    /* height: 100%; */
+    overflow-y: auto;
+}
+
+.d-layout .mcb{
+    /* position: relative; */
+    /* height: 100%; */
+}
+
+.vg-kg{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btm{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    text-align: center;
+}
+
+.btm p{
+    position: relative;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+
+/************************************************************************/
+/*********************************FORMS**********************************/
+/************************************************************************/
+form{
+    margin-top: 50px;
+}
+
+form label{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+form .input-group{
+    margin-top: 3px;
+}
+
+form .input-row{
+    display: flex;
+    gap: 10px;
+}
+
+form input, form select{
+    border: 0.2rem solid #B8393B;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 17px 10px;
+    width: 100%;
+    font-size: 13px;
+}
+
+form .input-group{
+    border: 0.2rem solid #B8393B;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+form .input-group span{
+    margin-right: 5px;
+}
+
+form .input-group span i{
+    color: #B8393B;
+    font-size: 18px;
+    padding: 5px;
+}
+
+form .input-group input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.btn{
+    outline: none;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    font-family: "Poppins-Medium";
+}
+
+.btn-primary{
+    background-color: #B8393B;
+    color: #fff !important;
+}
+
+.btn-outline{
+    border: 1px solid #B8393B;
+    background-color: transparent;
+    color: #111111;
+}
+
+form .form-actions{
+    margin-top: 60px;
+}
+
+form .form-actions .btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.check-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check-group p {
+    margin-left: 30px;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 2px solid #B8393B;
+    border-radius: 5px;
+}
+  
+.check-group:hover input ~ .checkmark {
+    background-color: transparent;
+}
+  
+.check-group input:checked ~ .checkmark {
+    background-color: #B8393B;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.check-group input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.check-group .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+/*************************************************************************/
+/*********************************COLORS**********************************/
+/*************************************************************************/
+.theme{
+    color: #B8393B;
+}
+
+.theme-bg{
+    background-color: #B8393B;
+}
+
+.theme-outline{
+    border-color: #B8393B;
+}
+
+.danger{
+    color: #B8393B;
+}
+
+.success{
+    color: #007438
+}
+
+.danger-bg{
+    background-color: #B8393B;
+}
+
+.success-bg{
+    background-color: #007438;
+}
+
+.danger-outline{
+    border-color: #B8393B;
+}
+
+.success-outline{
+    border-color: #007438;
+}

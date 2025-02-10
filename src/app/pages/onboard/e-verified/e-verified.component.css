@@ -1,0 +1,20 @@
+h2{
+  font-size: 18px;
+  font-family: "Poppins-Medium";
+  margin-bottom: 5px;
+}
+
+.intr{
+  color: #6E6E6E;
+  margin-top: 5px;
+}
+
+.pl-x{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #B8393B;
+  margin-top: 20px;
+}
+
+

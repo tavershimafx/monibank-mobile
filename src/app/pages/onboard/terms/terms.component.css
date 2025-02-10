@@ -1,0 +1,11 @@
+.terms-box{
+  height: 500px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 30px;
+  overflow-y: auto;
+  scrollbar-width: 10px;
+  scrollbar-color: #B8393B;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

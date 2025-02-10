@@ -1,0 +1,38 @@
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Poppins-SemiBold";
+  color: #B8393B;
+}
+
+.receiver{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  align-content: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #A5A5A5;
+}
+
+.receiver img{
+  width: 60px;
+}
+
+.receiver div{
+  position: relative;
+  margin-left: 10px;
+}
+
+.receiver div p{
+  margin: 0;
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+}
+
+.receiver div span{
+  font-size: 11px;
+  color: #A5A5A5;
+}

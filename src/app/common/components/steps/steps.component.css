@@ -1,0 +1,18 @@
+.stps{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.stps .stt{
+  padding: 3px;
+  width: 30%;
+  background-color: #EAEAEA;
+  border-radius: 3px;
+}
+
+.stps .stt.active{
+  background-color: #B8393B;
+}

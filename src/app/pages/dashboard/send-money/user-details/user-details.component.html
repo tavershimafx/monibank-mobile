@@ -1,0 +1,23 @@
+<back-nav><div class="title">Send Money</div></back-nav>
+<div class="receiver">
+    <img src="../../../../../assets/images/usr.png" alt="">
+    <div>
+        <p>{{recipient == undefined? "Recepient Name": recipient!.firstName + recipient!.lastName}}</p>
+        <span>{{recipient == undefined? "Account Number": recipient!.firstName + recipient!.lastName}}</span>
+    </div>
+</div>
+<form [formGroup]="sendForm" (submit)="next()">
+    <label for="Account">Account Number</label>
+    <input type="text" placeholder="0919256789" formControlName="accountNumber">
+    <span class="danger" *ngIf="errMsg">{{errMsg}}</span>
+    
+    <label for="Amount">Amount</label>
+    <input type="text" placeholder="₦10,000" formControlName="amount">
+
+    <label for="Narration">Narration</label>
+    <input type="text" placeholder="Money for our honeymoon" formControlName="note">
+        
+    <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Next</button>
+    </div>
+</form>
